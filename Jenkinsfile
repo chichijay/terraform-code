@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('initialize') {
             steps {
-                echo 'Hello World'
+                sh 'terraform init'
             }
         }
         stage('test') {
